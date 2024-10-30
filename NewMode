@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Zoom Tool</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        #controls {
+            margin-bottom: 20px;
+        }
+        #zoomSlider {
+            width: 100%;
+        }
+        #webView {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="setLightMode()">Light Mode</button>
+        <button onclick="setDarkMode()">Dark Mode</button>
+        <button id="colorBlindButton" onclick="toggleColorBlindMode()">Toggle Color Blind Mode</button>
+        <input type="range" id="zoomSlider" min="25" max="500" value="100" onchange="adjustZoom()" />
+    </div>
+    <iframe id="webView" src="https://www.google.com" sandbox="allow-same-origin"></iframe>
+
+    <script>
+        let currentMode = 'light';
+        let colorBlindMode = false;
+
+        function adjustZoom() {
+            const zoomFactor = document.getElementById('zoomSlider').value / 100;
+            document.getElementById('webView').style.transform = `scale(${zoomFactor})`;
+            document.getElementById('webView').style.transformOrigin = '0 0';
+        }
+
+        function setLightMode() {
+            currentMode = 'light';
+            applyCurrentMode();
+        }
+
+        function setDarkMode() {
+            currentMode = 'dark';
+            applyCurrentMode();
+        }
+
+        function toggleColorBlindMode() {
+            colorBlindMode = !colorBlindMode;
+            applyCurrentMode();
+        }
+
+        function applyCurrentMode() {
+            const iframeDocument = document.getElementById('webView').contentDocument || document.getElementById('webView').contentWindow.document;
+
+            let css = '';
+            if (currentMode === 'light') {
+                css += `
+                    body { background-color: white !important; color: black !important; }
+                    * { background-color: transparent !important; color: inherit !important; }
+                `;
+            } else {
+                css += `
+                    body { background-color: #121212 !important; color: white !important; }
+                    * { background-color: #121212 !important; color: white !important; }
+                    a { color: #BB86FC !important; }
+                `;
+            }
+
+            if (colorBlindMode) {
+                css += 'body { filter: contrast(1.2) saturate(0.8); }';
+            } else {
+                css += 'body { filter: none; }';
+            }
+
+            const style = iframeDocument.createElement('style');
+            style.type = 'text/css';
+            style.appendChild(iframeDocument.createTextNode(css));
+            iframeDocument.head.appendChild(style);
+        }
+    </script>
+</body>
+</html>
