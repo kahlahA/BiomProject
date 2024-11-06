@@ -1,265 +1,293 @@
-body{
-    padding: 0;
-    margin: 0;
-    background-image: url(../Image/EarthFromSpace.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(0, 0, 0);
-    height: 4px;
-    
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-  }
-
 html{
     font-family: monospace;
 }
 
-section{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    
+body{
+    margin: 0;
+    background-image: url(../Image/EarthFromSpace.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.title{
-    text-align: center;
-    color: #abb6db;
-}
-
-.text1{
+.heading {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    top: 20%;
-    left: 35%;
-    color: rgba(79, 88, 133, 0.918);
+    width: 100%;
+    top: 15%;
+    color: rgb(79, 88, 133);
     text-align: center;
 }
 
-/*------------------------------------------------------------*/
-.container{
+/*-------------------- Desert --------------------*/
+
+.desert {
     width: 90%;
-    height: 80px;
     position: absolute;
-    top: 200%;
-    left: 3%;
-    margin: 0 auto;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
+    top: 100%;
+    margin: 5%;
 }
 
-.left{
-    width: 45%;
-    height: 600px;
-    background-image: url(../Image/desert.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
+.desert_picture {
+    width: 50%;
+    border-radius: 10px;
 }
 
-.right{
-    width: 25%;
-    min-height: 400px;
+.desert_info {
+    width: 50%;
     background-color: rgb(71, 71, 71);
-    display: flex;
     position: absolute;
-    left: 25%;
-    align-items: center;
-    justify-content: center;
+    top: 75%;
+    left: 15%;
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: rgb(191, 218, 218);
-    margin-left: 20px;
-    margin-top: 150px;
 }
 
-.right h1{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 25px;
+.desert_info h1 {
+    font-size: 40px;
 }
 
-.right p{
+.desert_info p {
     font-size: 20px;
 }
 
-.right a{
+.desert_info a {
     text-decoration: none;
-    text-transform: uppercase;
     background-color: rgb(191, 218, 218);
     color: black;
     padding: 20px 30px;
     display: inline-block;
+    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
 }
 
 .button:hover{
     background-color: rgb(103, 116, 111);
+    transition: 0.1s;
 }
-/*-------------------------------------------------------------*/
-.container2{
+
+/*-------------------- Tundra --------------------*/
+
+.tundra {
     width: 90%;
-    height: 80px;
+    position: absolute;
+    top: 200%;
+    margin: 5%;
+}
+
+.tundra_picture {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+
+.tundra_info {
+    width: 50%;
+    background-color: rgb(71, 71, 71);
+    position: absolute;
+    top: 75%;
+    right: 15%;
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(191, 218, 218);
+}
+
+.tundra_info h1 {
+    font-size: 40px;
+}
+
+.tundra_info p {
+    font-size: 20px;
+}
+
+.tundra_info a {
+    text-decoration: none;
+    background-color: rgb(191, 218, 218);
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+
+/*-------------------- Forest --------------------*/
+
+.forest {
+    width: 90%;
     position: absolute;
     top: 300%;
-    left: 3%;
-    margin: 0 auto;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
+    margin: 5%;
 }
 
-.left2{
-    width: 45%;
-    height: 600px;
-    background-image: url(../Image/arctic.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
+.forest_picture {
+    width: 50%;
+    border-radius: 10px;
 }
 
-.right2{
-    width: 40%;
-    min-height: 400px;
+.forest_info {
+    width: 50%;
     background-color: rgb(71, 71, 71);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 75%;
+    left: 15%;
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: rgb(191, 218, 218);
-    margin-left: -350px;
-    margin-top: 150px;
 }
 
-.right2 h1{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 25px;
+.forest_info h1 {
+    font-size: 40px;
 }
 
-.right2 p{
+.forest_info p {
     font-size: 20px;
 }
 
-.right2 a{
+.forest_info a {
     text-decoration: none;
-    text-transform: uppercase;
     background-color: rgb(191, 218, 218);
     color: black;
     padding: 20px 30px;
     display: inline-block;
+    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
 }
 
-.button2:hover{
-    background-color: rgb(103, 116, 111);
-}
+/*-------------------- Grassland --------------------*/
 
-/*-----------------------------------------------------------*/
-
-.container3{
-    width: 100%;
-    height: 80px;
+.grassland {
+    width: 90%;
     position: absolute;
     top: 400%;
-    right: 3%;
-    margin: 0 auto;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
+    margin: 5%;
 }
 
-.right3{
-    width: 45%;
-    height: 600px;
-    background-image: url(../Image/forest.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    margin-left: 55%;
+.grassland_picture {
+    width: 50%;
+    border-radius: 10px;
 }
 
-.left3{
-    width: 20%;
-    min-height: 100px;
+.grassland_info {
+    width: 50%;
     background-color: rgb(71, 71, 71);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 75%;
+    left: 15%;
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: rgb(191, 218, 218);
-    margin-left: -1100px;
-    margin-top: 150px;
 }
 
-.left3 h1{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 25px;
+.grassland_info h1 {
+    font-size: 40px;
 }
 
-.left3 p{
+.grassland_info p {
     font-size: 20px;
 }
 
-.left3 a{
+.grassland_info a {
     text-decoration: none;
-    text-transform: uppercase;
     background-color: rgb(191, 218, 218);
     color: black;
     padding: 20px 30px;
     display: inline-block;
+    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
 }
 
-.button3:hover{
-    background-color: rgb(103, 116, 111);
-}
+/*-------------------- Ocean --------------------*/
 
-/*---------------------------------------------------*/
-
-.container4{
-    width: 100%;
-    height: 80px;
+.ocean {
+    width: 90%;
     position: absolute;
-    top: 450%;
-    right: -20%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    margin: 3px;
-    box-sizing: border-box;
-    padding: 20px 20px;
+    top: 500%;
+    margin: 5%;
 }
 
-label{
-    font-size: 35px;
+.ocean_picture {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+
+.ocean_info {
+    width: 50%;
+    background-color: rgb(71, 71, 71);
+    position: absolute;
+    top: 75%;
+    right: 15%;
+    padding: 30px;
+    border-radius: 10px;
     color: rgb(191, 218, 218);
 }
 
-.textbox {
-    width: 45%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical; 
-    font-size: x-large;
-    background-color: rgba(0, 0, 0, 0.219);
+.ocean_info h1 {
+    font-size: 40px;
+}
+
+.ocean_info p {
+    font-size: 20px;
+}
+
+.ocean_info a {
+    text-decoration: none;
+    background-color: rgb(191, 218, 218);
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+
+/*-------------------- Rainforest --------------------*/
+
+.rainforest {
+    width: 90%;
+    position: absolute;
+    top: 600%;
+    margin: 5%;
+}
+
+.rainforest_picture {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.rainforest_info {
+    width: 50%;
+    background-color: rgb(71, 71, 71);
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    padding: 30px;
+    border-radius: 10px;
     color: rgb(191, 218, 218);
+}
+
+.rainforest_info h1 {
+    font-size: 40px;
+}
+
+.rainforest_info p {
+    font-size: 20px;
+}
+
+.rainforest_info a {
+    text-decoration: none;
+    background-color: rgb(191, 218, 218);
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 8px;
 }
