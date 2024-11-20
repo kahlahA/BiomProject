@@ -1,42 +1,72 @@
-body{
+
+body {
     padding: 0;
     margin: 0;
-    background-image: url(../Image/EarthFromSpace.jpg);
+    background-image: url("../Image/EarthFromSpace.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(0, 0, 0);
-    height: 4px;
-    
+    height: 100%;
+    font-family: monospace;
 }
+
+
+
+#text-controls {
+    position: fixed; 
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000; 
+}
+
+#text-controls button {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #abb6db;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+#text-controls button:hover {
+    background-color: #575f85;
+    color: white;
+}
+
+
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
-  }
-
-html{
-    font-family: monospace;
 }
 
-section{
+
+section {
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-    
 }
 
-.title{
+
+.title {
     text-align: center;
     color: #abb6db;
 }
 
-.text1{
+
+.text1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -46,178 +76,53 @@ section{
     text-align: center;
 }
 
-/*------------------------------------------------------------*/
-.container{
-    width: 90%;
-    height: 80px;
-    position: absolute;
-    top: 200%;
-    left: 3%;
-    margin: 0 auto;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
+
+.container, .container2, .container3 {
+    width: 90%; 
+    height: auto; 
+    position: relative;
+    margin: 20px auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
-.left{
-    width: 45%;
-    height: 600px;
-    background-image: url(../Image/desert.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
+
+.left, .left2, .right3 {
+    width: 45%; 
+    height: auto; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-radius: 8px; 
 }
 
-.right{
-    width: 25%;
-    min-height: 400px;
-    background-color: rgb(71, 71, 71);
-    display: flex;
-    position: absolute;
-    left: 25%;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 8px;
-    color: rgb(191, 218, 218);
-    margin-left: 20px;
-    margin-top: 150px;
-}
 
-.right h1{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 25px;
-}
-
-.right p{
-    font-size: 20px;
-}
-
-.right a{
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: rgb(191, 218, 218);
-    color: black;
-    padding: 20px 30px;
-    display: inline-block;
-    letter-spacing: 2px;
-    border-radius: 8px;
-}
-
-.button:hover{
-    background-color: rgb(103, 116, 111);
-}
-/*-------------------------------------------------------------*/
-.container2{
-    width: 90%;
-    height: 80px;
-    position: absolute;
-    top: 300%;
-    left: 3%;
-    margin: 0 auto;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
-}
-
-.left2{
-    width: 45%;
-    height: 600px;
-    background-image: url(../Image/arctic.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-}
-
-.right2{
-    width: 40%;
-    min-height: 400px;
-    background-color: rgb(71, 71, 71);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 8px;
-    color: rgb(191, 218, 218);
-    margin-left: -350px;
-    margin-top: 150px;
-}
-
-.right2 h1{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 25px;
-}
-
-.right2 p{
-    font-size: 20px;
-}
-
-.right2 a{
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: rgb(191, 218, 218);
-    color: black;
-    padding: 20px 30px;
-    display: inline-block;
-    letter-spacing: 2px;
-    border-radius: 8px;
-}
-
-.button2:hover{
-    background-color: rgb(103, 116, 111);
-}
-
-/*-----------------------------------------------------------*/
-
-.container3{
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    top: 400%;
-    right: 3%;
-    margin: 0 auto;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
-}
-
-.right3{
-    width: 45%;
-    height: 600px;
-    background-image: url(../Image/forest.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    margin-left: 55%;
-}
-
-.left3{
-    width: 20%;
+.right, .right2, .left3 {
+    width: 45%; 
     min-height: 100px;
+    height: auto;
     background-color: rgb(71, 71, 71);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 8px;
-    color: rgb(191, 218, 218);
-    margin-left: -1100px;
-    margin-top: 150px;
+    padding: 20px; 
+    border-radius: 8px; 
+    color: rgb(191, 218, 218); 
+    overflow: auto; 
 }
 
-.left3 h1{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 25px;
+/* Adjust text margins and alignment */
+.right h1, .right2 h1, .left3 h1 {
+    margin-bottom: 10px; 
 }
 
-.left3 p{
-    font-size: 20px;
+.right p, .right2 p, .left3 p {
+    margin-bottom: 15px;
+    line-height: 1.6; 
 }
 
-.left3 a{
+/* Button Styling */
+a.button, a.button2, a.button3 {
     text-decoration: none;
     text-transform: uppercase;
     background-color: rgb(191, 218, 218);
@@ -228,38 +133,17 @@ section{
     border-radius: 8px;
 }
 
-.button3:hover{
+.button:hover, .button2:hover, .button3:hover {
     background-color: rgb(103, 116, 111);
 }
 
-/*---------------------------------------------------*/
+/* Responsive Design */
+@media (max-width: 768px) {
+    .left, .right, .left2, .right2, .right3, .left3 {
+        width: 100%;
+    }
 
-.container4{
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    top: 450%;
-    right: -20%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    margin: 3px;
-    box-sizing: border-box;
-    padding: 20px 20px;
-}
-
-label{
-    font-size: 35px;
-    color: rgb(191, 218, 218);
-}
-
-.textbox {
-    width: 45%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical; 
-    font-size: x-large;
-    background-color: rgba(0, 0, 0, 0.219);
-    color: rgb(191, 218, 218);
+    .container, .container2, .container3 {
+        flex-direction: column; 
+    }
 }
