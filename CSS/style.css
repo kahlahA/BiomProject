@@ -1,8 +1,8 @@
-html{
+html {
     font-family: monospace;
 }
 
-body{
+body {
     margin: 0;
     background-image: url(../Image/EarthFromSpace.jpg);
     background-attachment: fixed;
@@ -15,8 +15,14 @@ body{
     position: absolute;
     width: 100%;
     top: 15%;
-    color: rgb(79, 88, 133);
+    color: rgb(128, 128, 192);
     text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.link:hover {
+    background-color: rgb(128, 160, 160);
+    transition: 0.1s;
 }
 
 /*-------------------- Desert --------------------*/
@@ -35,37 +41,31 @@ body{
 
 .desert_info {
     width: 50%;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(64, 64, 64);
+    background-image: linear-gradient(rgb(128, 128, 128), rgb(16, 16, 16));
+    color: rgb(192, 255, 255);
     position: absolute;
     top: 75%;
     left: 15%;
     padding: 30px;
     border-radius: 10px;
-    color: rgb(191, 218, 218);
-}
-
-.desert_info h1 {
-    font-size: 40px;
-}
-
-.desert_info p {
     font-size: 20px;
+}
+
+.desert_info_light {
+    background-color: rgb(192, 255, 255);
+    background-image: linear-gradient(rgb(192, 255, 255), rgb(128, 160, 160));
+    color: rgb(64, 64, 64);
 }
 
 .desert_info a {
     text-decoration: none;
-    background-color: rgb(191, 218, 218);
+    background-color: rgb(192, 255, 255);
     color: black;
     padding: 20px 30px;
     display: inline-block;
-    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
-}
-
-.button:hover{
-    background-color: rgb(103, 116, 111);
-    transition: 0.1s;
 }
 
 /*-------------------- Tundra --------------------*/
@@ -86,30 +86,29 @@ body{
 
 .tundra_info {
     width: 50%;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(64, 64, 64);
+    background-image: linear-gradient(rgb(128, 128, 128), rgb(16, 16, 16));
+    color: rgb(192, 255, 255);
     position: absolute;
     top: 75%;
     right: 15%;
     padding: 30px;
     border-radius: 10px;
-    color: rgb(191, 218, 218);
-}
-
-.tundra_info h1 {
-    font-size: 40px;
-}
-
-.tundra_info p {
     font-size: 20px;
+}
+
+.tundra_info_light {
+    background-color: rgb(192, 255, 255);
+    background-image: linear-gradient(rgb(192, 255, 255), rgb(128, 160, 160));
+    color: rgb(64, 64, 64);
 }
 
 .tundra_info a {
     text-decoration: none;
-    background-color: rgb(191, 218, 218);
+    background-color: rgb(192, 255, 255);
     color: black;
     padding: 20px 30px;
     display: inline-block;
-    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
 }
@@ -130,30 +129,29 @@ body{
 
 .forest_info {
     width: 50%;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(64, 64, 64);
+    background-image: linear-gradient(rgb(128, 128, 128), rgb(16, 16, 16));
+    color: rgb(192, 255, 255);
     position: absolute;
     top: 75%;
     left: 15%;
     padding: 30px;
     border-radius: 10px;
-    color: rgb(191, 218, 218);
-}
-
-.forest_info h1 {
-    font-size: 40px;
-}
-
-.forest_info p {
     font-size: 20px;
+}
+
+.forest_info_light {
+    background-color: rgb(192, 255, 255);
+    background-image: linear-gradient(rgb(192, 255, 255), rgb(128, 160, 160));
+    color: rgb(64, 64, 64);
 }
 
 .forest_info a {
     text-decoration: none;
-    background-color: rgb(191, 218, 218);
+    background-color: rgb(192, 255, 255);
     color: black;
     padding: 20px 30px;
     display: inline-block;
-    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
 }
@@ -174,30 +172,29 @@ body{
 
 .grassland_info {
     width: 50%;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(64, 64, 64);
+    background-image: linear-gradient(rgb(128, 128, 128), rgb(16, 16, 16));
+    color: rgb(192, 255, 255);
     position: absolute;
     top: 75%;
     left: 15%;
     padding: 30px;
     border-radius: 10px;
-    color: rgb(191, 218, 218);
-}
-
-.grassland_info h1 {
-    font-size: 40px;
-}
-
-.grassland_info p {
     font-size: 20px;
+}
+
+.grassland_info_light {
+    background-color: rgb(192, 255, 255);
+    background-image: linear-gradient(rgb(192, 255, 255), rgb(128, 160, 160));
+    color: rgb(64, 64, 64);
 }
 
 .grassland_info a {
     text-decoration: none;
-    background-color: rgb(191, 218, 218);
+    background-color: rgb(192, 255, 255);
     color: black;
     padding: 20px 30px;
     display: inline-block;
-    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
 }
@@ -220,74 +217,167 @@ body{
 
 .ocean_info {
     width: 50%;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(64, 64, 64);
+    background-image: linear-gradient(rgb(128, 128, 128), rgb(16, 16, 16));
+    color: rgb(192, 255, 255);
     position: absolute;
     top: 75%;
     right: 15%;
     padding: 30px;
     border-radius: 10px;
-    color: rgb(191, 218, 218);
-}
-
-.ocean_info h1 {
-    font-size: 40px;
-}
-
-.ocean_info p {
     font-size: 20px;
+}
+
+.ocean_info_light {
+    background-color: rgb(192, 255, 255);
+    background-image: linear-gradient(rgb(192, 255, 255), rgb(128, 160, 160));
+    color: rgb(64, 64, 64);
 }
 
 .ocean_info a {
     text-decoration: none;
-    background-color: rgb(191, 218, 218);
+    background-color: rgb(192, 255, 255);
     color: black;
     padding: 20px 30px;
     display: inline-block;
-    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
 }
 
-/*-------------------- Rainforest --------------------*/
+/*-------------------- Jungle --------------------*/
 
-.rainforest {
+.jungle {
     width: 90%;
     position: absolute;
     top: 600%;
     margin: 5%;
 }
 
-.rainforest_picture {
+.jungle_picture {
     width: 50%;
     border-radius: 10px;
 }
 
-.rainforest_info {
+.jungle_info {
     width: 50%;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(64, 64, 64);
+    background-image: linear-gradient(rgb(128, 128, 128), rgb(16, 16, 16));
+    color: rgb(192, 255, 255);
     position: absolute;
     top: 75%;
     left: 15%;
     padding: 30px;
     border-radius: 10px;
-    color: rgb(191, 218, 218);
-}
-
-.rainforest_info h1 {
-    font-size: 40px;
-}
-
-.rainforest_info p {
     font-size: 20px;
 }
 
-.rainforest_info a {
+.jungle_info_light {
+    background-color: rgb(192, 255, 255);
+    background-image: linear-gradient(rgb(192, 255, 255), rgb(128, 160, 160));
+    color: rgb(64, 64, 64);
+}
+
+.jungle_info a {
     text-decoration: none;
-    background-color: rgb(191, 218, 218);
+    background-color: rgb(192, 255, 255);
     color: black;
     padding: 20px 30px;
     display: inline-block;
-    font-size: 15px;
     letter-spacing: 2px;
     border-radius: 8px;
+}
+
+.spacer {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 400%
+}
+
+/*-------------------- Toolbar --------------------*/
+
+.toolbar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(64, 64, 64);
+}
+
+.toolbar_light {
+    background-color: rgb(192, 255, 255);
+}
+
+.mode {
+    background-color: rgb(64, 64, 64);
+    color: rgb(192, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.mode_light {
+    background-color: rgb(192, 255, 255);
+    color: rgb(64, 64, 64);
+}
+
+.mode:hover {
+    background-color: rgb(192, 255, 255);
+    color: rgb(64, 64, 64);
+    transition: 0.1s;
+}
+
+.mode_light:hover {
+    background-color: rgb(128, 160, 160);
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: rgb(64, 64, 64);
+    color: rgb(192, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button_light {
+    background-color: rgb(192, 255, 255);
+    color: rgb(64, 64, 64);
+}
+
+.button:hover {
+    background-color: rgb(192, 255, 255);
+    color: rgb(64, 64, 64);
+    transition: 0.1s;
+}
+
+.button_light:hover {
+    background-color: rgb(128, 160, 160);
+    color: black;
+}
+
+.button1 {
+    font-size: 20px;
+}
+
+.button2 {
+    font-size: 40px;
+}
+
+.button3 {
+    font-size: 60px;
 }
