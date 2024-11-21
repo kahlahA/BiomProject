@@ -1,8 +1,8 @@
-html{
+html {
     font-family: monospace;
 }
 
-body{
+body {
     margin: 0;
     background-image: url(../Image/plains.jpg);
     background-attachment: fixed;
@@ -20,6 +20,10 @@ body{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.heading_colorblind {
+    color: white;
+}
+
 .grassland_info {
     width: 75%;
     background-color: rgb(64, 64, 64);
@@ -31,6 +35,7 @@ body{
     padding: 30px;
     border-radius: 10px;
     font-size: 20px;
+    border: 1px solid black;
 }
 
 .grassland_info_light {
@@ -39,7 +44,13 @@ body{
     color: rgb(64, 64, 64);
 }
 
-.grassland_info a {
+.grassland_info_colorblind {
+    background-color: white;
+    background-image: linear-gradient(white, white);
+    color: black;
+}
+
+.link {
     text-decoration: none;
     background-color: rgb(192, 255, 255);
     color: black;
@@ -47,11 +58,20 @@ body{
     display: inline-block;
     letter-spacing: 2px;
     border-radius: 8px;
+    border: 1px solid black;
+}
+
+.link_colorblind {
+    background-color: white;
 }
 
 .link:hover {
     background-color: rgb(128, 160, 160);
     transition: 0.1s;
+}
+
+.link_colorblind:hover {
+    background-color: lightgrey;
 }
 
 .spacer {
@@ -69,10 +89,15 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(64, 64, 64);
+    border: 1px solid black;
 }
 
 .toolbar_light {
     background-color: rgb(192, 255, 255);
+}
+
+.toolbar_colorblind {
+    background-color: white;
 }
 
 .mode {
@@ -90,6 +115,11 @@ body{
     color: rgb(64, 64, 64);
 }
 
+.mode_colorblind {
+    background-color: white;
+    color: black;
+}
+
 .mode:hover {
     background-color: rgb(192, 255, 255);
     color: rgb(64, 64, 64);
@@ -98,6 +128,46 @@ body{
 
 .mode_light:hover {
     background-color: rgb(128, 160, 160);
+    color: black;
+}
+
+.mode_colorblind:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.colorblind {
+    background-color: rgb(64, 64, 64);
+    color: rgb(192, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.colorblind_light {
+    background-color: rgb(192, 255, 255);
+    color: rgb(64, 64, 64);
+}
+
+.colorblind_colorblind {
+    background-color: white;
+    color: black;
+}
+
+.colorblind:hover {
+    background-color: rgb(192, 255, 255);
+    color: rgb(64, 64, 64);
+    transition: 0.1s;
+}
+
+.colorblind_light:hover {
+    background-color: rgb(128, 160, 160);
+    color: black;
+}
+
+.colorblind_colorblind:hover {
+    background-color: lightgrey;
     color: black;
 }
 
@@ -124,6 +194,11 @@ body{
     color: rgb(64, 64, 64);
 }
 
+.button_colorblind {
+    background-color: white;
+    color: black;
+}
+
 .button:hover {
     background-color: rgb(192, 255, 255);
     color: rgb(64, 64, 64);
@@ -132,6 +207,11 @@ body{
 
 .button_light:hover {
     background-color: rgb(128, 160, 160);
+    color: black;
+}
+
+.button_colorblind:hover {
+    background-color: grey;
     color: black;
 }
 

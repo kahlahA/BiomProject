@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="heading">
+    <div class="heading" id="heading">
         <h3>World Biomes</h3>
     </div>
 
@@ -18,7 +18,7 @@
             <p>
                 The Desert is an arid region of little precipitation and extreme temperatures ranging from very hot to very cold. Living conditions are harsh with scarce vegetation, yet many animals still make the desert their home.
             </p>
-            <a href="desert.html" class="link">Tell Me More</a>
+            <a href="desert.html" class="link" id="link1">Tell Me More</a>
         </div>
     </div>
 
@@ -29,7 +29,7 @@
             <p>
                 The Tundra is an extremely frigid and desolate region with little vegetation. Low precipitation in the form of snowfall and frozen landscapes make living in the tundra challenging, but many animals adapt to its harsh environment.
             </p>
-            <a href="tundra.html" class="link">Tell Me More</a>
+            <a href="tundra.html" class="link" id="link2">Tell Me More</a>
         </div>
     </div>
 
@@ -40,7 +40,7 @@
             <p>
                 The Forest is a lush ecosystem with good precipitation and average temperatures. There are vast amounts of plant life with most notably a dense population of trees, supplying animals with plenty of food and shelter.
             </p>
-            <a href="forest.html" class="link">Tell Me More</a>
+            <a href="forest.html" class="link" id="link3">Tell Me More</a>
         </div>
     </div>
 
@@ -51,7 +51,7 @@
             <p>
                 The Grassland is a region with vegetation consisting mostly of grasses. Average temperatures and lower precipitation make living conditions not ideal but habitable for the animals that live there.
             </p>
-            <a href="grassland.html" class="link">Tell Me More</a>
+            <a href="grassland.html" class="link" id="link4">Tell Me More</a>
         </div>
     </div>
 
@@ -62,7 +62,7 @@
             <p>
                 The Ocean covers almost three quarters of the entire world's surface, making it the most abundant biome by far. It consists of many different plant and animal species that have adapted to the salty environment.
             </p>
-            <a href="ocean.html" class="link">Tell Me More</a>
+            <a href="ocean.html" class="link" id="link5">Tell Me More</a>
         </div>
     </div>
 
@@ -73,13 +73,14 @@
             <p>
                 The Jungle is a very lush tropical region sprawling with life. Its high temperatures and abundant precipitation allow many various plant and animal species to thrive, and it is the most diversified biome in the world.
             </p>
-            <a href="jungle.html" class="link">Tell Me More</a>
+            <a href="jungle.html" class="link" id="link6">Tell Me More</a>
         </div>
         <div class="spacer"></div>
     </div>
 
     <div class="toolbar" id="toolbar">
         <button class="mode" id="mode" value="Light Mode" onclick="changeMode()">Light Mode</button>
+        <button class="colorblind" id="colorblind" value="Colorblind Mode ON" onclick="toggleColorblind()">Colorblind Mode ON</button>
         <div class="buttons">
             <button class="button button1" id="button1" onclick="changeFontSize('20px', '0%')">A</button>
             <button class="button button2" id="button2" onclick="changeFontSize('40px', '50%')">A</button>
