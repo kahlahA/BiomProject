@@ -9,6 +9,7 @@ function increaseFontSize() {
     }
 }
 
+
 // Function to decrease font size
 function decreaseFontSize() {
     if (fontSize > 12) { // Prevent font size from becoming too small
