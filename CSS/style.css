@@ -1,8 +1,7 @@
-
 body {
     padding: 0;
     margin: 0;
-    background-image: url("../Image/EarthFromSpace.jpg");
+    background-image: url("../images/EarthFromSpace.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +39,32 @@ body {
     color: white;
 }
 
+#mode-controls {
+    position: fixed;
+    top: 100px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+}
 
+#mode-controls button {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #abb6db;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+#mode-controls button:hover {
+    background-color: #575f85;
+    color: white;
+}
 
 .center {
     display: block;
@@ -49,7 +73,6 @@ body {
     width: 10%;
 }
 
-
 section {
     min-height: 100vh;
     width: 100%;
@@ -57,25 +80,22 @@ section {
     align-items: center;
 }
 
-
 .title {
     text-align: center;
     color: #abb6db;
 }
 
-
 .text1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 100px;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: fixed;
     top: 20%;
-    left: 35%;
+    left: 2%;
     color: rgba(79, 88, 133, 0.918);
     text-align: center;
 }
-
 
 .container, .container2, .container3 {
     width: 90%; 
@@ -90,6 +110,27 @@ section {
     box-sizing: border-box; 
 }
 
+/* Apply a background image to .right, .right2, and .right3 
+.right {
+    background-image: url("../images/desert.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: rgb(191, 218, 218); 
+    padding: 20px; 
+    border-radius: 8px; 
+    overflow: auto; 
+}
+*/
+
+/* Optional: Adjust background images when in color-blind mode 
+body.color-blind-mode .right {
+    background-image: url("../images/desertCB.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+*/
 
 .left, .left2, .right3 {
     width: 45%; 
@@ -99,7 +140,6 @@ section {
     border-radius: 8px; 
 }
 
-
 .right, .right2, .left3 {
     width: 45%; 
     min-height: 100px;
@@ -107,11 +147,10 @@ section {
     background-color: rgb(71, 71, 71);
     padding: 20px; 
     border-radius: 8px; 
-    color: rgb(191, 218, 218); 
+    color: rgb(255, 255, 255); 
     overflow: auto; 
 }
 
-/* Adjust text margins and alignment */
 .right h1, .right2 h1, .left3 h1 {
     margin-bottom: 10px; 
 }
@@ -121,7 +160,6 @@ section {
     line-height: 1.6; 
 }
 
-/* Button Styling */
 a.button, a.button2, a.button3 {
     text-decoration: none;
     text-transform: uppercase;
@@ -137,7 +175,6 @@ a.button, a.button2, a.button3 {
     background-color: rgb(103, 116, 111);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .left, .right, .left2, .right2, .right3, .left3 {
         width: 100%;
