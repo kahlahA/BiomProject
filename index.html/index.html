@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Biomes</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../Script/script.js" defer></script>
+    <script src="../script/script.js" defer></script>
 </head>
 
 <body>
@@ -16,6 +16,12 @@
         <button onclick="resetFontSize()">Reset Text Size</button>
     </div>
 
+    <!-- Mode Controls -->
+    <div id="mode-controls">
+        <button onclick="toggleLightMode()">Toggle Light/Dark Mode</button>
+        <button onclick="toggleColorBlindMode()">Toggle Color-Blind Mode</button>
+    </div>
+
     <!-- Main Title -->
     <h3 class="text1">World Biomes</h3>
 
@@ -24,54 +30,54 @@
         <div class="left"></div>
         <div class="right">
             <div class="content">
-                    <h1>The Desert</h1>
-                    <p>
-                        The desert biome, covering about one-fifth of Earth’s surface, 
-                        is defined by its extremely dry conditions, with an annual rainfall 
-                        of no more than 50 centimeters (20 inches). The landscape of deserts 
-                        can vary significantly, with soil that may be sandy, gravelly, or 
-                        stony, depending on the type of desert. There are four main types of 
-                        deserts: hot and dry, semi-arid, coastal, and cold. Hot and dry deserts, 
-                        like the Sahara and Mojave, experience high temperatures year-round, while 
-                        semi-arid deserts, found in places like North America and Asia, have cooler
-                        winters with occasional rainfall. Coastal deserts, such as the Atacama Desert 
-                        in Chile, are more humid but still receive little rain. Cold deserts, like 
-                        Antarctica, are dry but have frigid temperatures.
-                    </p>
-                    <p>
-                        The harsh desert environment is home to a variety of animals that have adapted 
-                        to survive extreme conditions. Invertebrates such as scorpions, tarantulas, and 
-                        desert beetles are common, while mammals like the fennec fox and kangaroo rat 
-                        have developed strategies to conserve water and stay cool. Birds such as the 
-                        roadrunner and burrowing owl are adept at finding food and shelter in the arid 
-                        landscape. Reptiles, including the Gila monster and horned lizard, thrive in the 
-                        heat by regulating their body temperature and seeking shade when needed. Amphibians 
-                        like the desert rain frog and spadefoot toad emerge only when conditions are moist, 
-                        and fish such as the desert pupfish inhabit isolated water sources. These adaptations 
-                        enable a wide variety of species to survive and even flourish in one of Earth’s most 
-                        challenging biomes.
-                    </p>
-                    <a href="#" class="button">&#8897;</a>
-                </div>
+                <h1>The Desert</h1>
+                <p>
+                    The desert biome, covering about one-fifth of Earth’s surface, 
+                    is defined by its extremely dry conditions, with an annual rainfall 
+                    of no more than 50 centimeters (20 inches). The landscape of deserts 
+                    can vary significantly, with soil that may be sandy, gravelly, or 
+                    stony, depending on the type of desert. There are four main types of 
+                    deserts: hot and dry, semi-arid, coastal, and cold. Hot and dry deserts, 
+                    like the Sahara and Mojave, experience high temperatures year-round, while 
+                    semi-arid deserts, found in places like North America and Asia, have cooler
+                    winters with occasional rainfall. Coastal deserts, such as the Atacama Desert 
+                    in Chile, are more humid but still receive little rain. Cold deserts, like 
+                    Antarctica, are dry but have frigid temperatures.
+                </p>
+                <p>
+                    The harsh desert environment is home to a variety of animals that have adapted 
+                    to survive extreme conditions. Invertebrates such as scorpions, tarantulas, and 
+                    desert beetles are common, while mammals like the fennec fox and kangaroo rat 
+                    have developed strategies to conserve water and stay cool. Birds such as the 
+                    roadrunner and burrowing owl are adept at finding food and shelter in the arid 
+                    landscape. Reptiles, including the Gila monster and horned lizard, thrive in the 
+                    heat by regulating their body temperature and seeking shade when needed. Amphibians 
+                    like the desert rain frog and spadefoot toad emerge only when conditions are moist, 
+                    and fish such as the desert pupfish inhabit isolated water sources. These adaptations 
+                    enable a wide variety of species to survive and even flourish in one of Earth’s most 
+                    challenging biomes.
+                </p>
+                
             </div>
         </div>
-    
-        <!-- Arctic Section -->
-        <section>
-            <div class="container2">
-                <div class="left2"></div>
-                <div class="right2">
-                    <div class="content2">
+    </div>
+
+    <!-- Arctic Section -->
+    <section>
+        <div class="container2">
+            <div class="left2"></div>
+            <div class="right2">
+                <div class="content2">
                     <h1>The Arctic</h1>
                     <p>
-                        The Arctic biome is one of the most unique and extreme ecosystems on Earth, c
-                        haracterized by its frigid temperatures, icy landscapes, and specialized wildlife. 
-                        Located at the northernmost regions of the planet, the Arctic biome encompasses the 
-                        Arctic Ocean and parts of Alaska, Canada, Russia, Greenland, and Scandinavia. This 
-                        biome is defined by its cold climate, with long winters and short, cool summers. The 
-                        temperature can drop as low as -40°F (-40°C) in winter and reach just above freezing 
-                        during summer months. Despite these harsh conditions, the Arctic is home to a remarkable 
-                        variety of life forms that have adapted to survive in such an unforgiving environment.
+                        The Arctic biome is one of the most unique and extreme ecosystems on Earth, characterized 
+                        by its frigid temperatures, icy landscapes, and specialized wildlife. Located at the 
+                        northernmost regions of the planet, the Arctic biome encompasses the Arctic Ocean and parts 
+                        of Alaska, Canada, Russia, Greenland, and Scandinavia. This biome is defined by its cold 
+                        climate, with long winters and short, cool summers. The temperature can drop as low as 
+                        -40°F (-40°C) in winter and reach just above freezing during summer months. Despite these 
+                        harsh conditions, the Arctic is home to a remarkable variety of life forms that have adapted 
+                        to survive in such an unforgiving environment.
                     </p>
                     <p>
                         The primary characteristic of the Arctic biome is its lack of vegetation. The growing 
@@ -81,53 +87,29 @@
                         a variety of herbivores, such as Arctic hares, caribou, and lemmings, which in turn provide food for 
                         carnivores like Arctic foxes, wolves, and polar bears.
                     </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forest Section -->
+    <section>
+        <div class="container3">
+            <div class="right3"></div>
+            <div class="left3">
+                <div class="content3">
+                    <h1>The Forest</h1>
                     <p>
-                        The Arctic Ocean and surrounding waters are crucial for the survival of many species. The ice-covered 
-                        waters provide habitat for marine mammals, such as seals, walruses, and whales. Migratory birds, like 
-                        the Arctic tern, also flock to the region to breed during the summer months. The Arctic's extreme 
-                        seasonality influences animal behavior, with many species adapting to the harsh winters by migrating, 
-                        hibernating, or growing thicker coats for insulation.
+                        The forest biome is one of Earth's most important ecosystems, covering approximately 30% of the planet's 
+                        surface. It plays a critical role in maintaining global biodiversity, regulating climate, and supporting 
+                        the water cycle. Forests are classified into three main types: tropical, temperate, and boreal, each with 
+                        its own distinct characteristics, flora, and fauna.
                     </p>
-                <a href="#" class="button2">&#8897;</a>
+                    
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Forest Section -->
-<section>
-    <div class="container3">
-        <div class="right3"></div>
-        <div class="left3">
-            <div class="content3">
-                <h1>The Forest</h1>
-                <p>
-                    The forest biome is one of the Earth's most important ecosystems, covering approximately 30% of the planet's 
-                    surface. It plays a critical role in maintaining global biodiversity, regulating climate, and supporting the 
-                    water cycle. Forests are classified into three main types: tropical, temperate, and boreal, each with its own 
-                    distinct characteristics, flora, and fauna.
-
-                    Tropical forests are found near the equator and are characterized by warm temperatures and high humidity 
-                    year-round. These forests are home to a vast array of plant and animal species, many of which are not found 
-                    anywhere else in the world. The Amazon Rainforest, for example, is one of the most biodiverse regions on Earth. 
-                    The dense canopy of tropical forests allows little sunlight to reach the forest floor, creating a unique environment 
-                    for the species that inhabit it.
-
-                    Temperate forests, which exist in regions with distinct seasons, such as parts of North America, Europe, and East Asia, 
-                    experience mild to cold winters and warm summers. These forests are typically composed of deciduous trees, which shed their 
-                    leaves in the fall. While not as biodiverse as tropical forests, temperate forests are still home to a wide range of species, 
-                    including deer, foxes, and various bird species. These forests also contribute significantly to the global carbon cycle by 
-                    absorbing large amounts of carbon dioxide through photosynthesis.
-
-                    Boreal forests, also known as taigas, are found in the northernmost parts of the world, such as Canada, Scandinavia, and Russia. 
-                    They are characterized by long, cold winters and short, cool summers. Boreal forests are dominated by coniferous trees like pines, spruces, 
-                    and firs, which are well adapted to the harsh climate. These forests provide critical habitat for species such as moose, wolves, and bears, 
-                    and they also store large quantities of carbon in their soil and biomass, making them essential for combating climate change.
-                </p>
-                <a href="#" class="button3">&#8897;</a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 </body>
 </html>
