@@ -110,28 +110,6 @@ section {
     box-sizing: border-box; 
 }
 
-/* Apply a background image to .right, .right2, and .right3 
-.right {
-    background-image: url("../images/desert.jpg"); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    color: rgb(191, 218, 218); 
-    padding: 20px; 
-    border-radius: 8px; 
-    overflow: auto; 
-}
-*/
-
-/* Optional: Adjust background images when in color-blind mode 
-body.color-blind-mode .right {
-    background-image: url("../images/desertCB.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-*/
-
 .left, .left2, .right3 {
     width: 45%; 
     height: auto; 
