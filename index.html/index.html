@@ -5,111 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Biomes</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../Script/script.js" defer></script>
+    <script src="../script/script.js" defer></script>
 </head>
 
 <body>
-    <!-- Font Size Controls -->
-    <div id="text-controls">
-        <button onclick="increaseFontSize()">Increase Text Size</button>
-        <button onclick="decreaseFontSize()">Decrease Text Size</button>
-        <button onclick="resetFontSize()">Reset Text Size</button>
-    </div>
+    <body>
+        <nav id="horizontal-nav">
+            <button onclick="increaseFontSize()">Increase Text Size</button>
+            <button onclick="decreaseFontSize()">Decrease Text Size</button>
+            <button onclick="resetFontSize()">Reset Text Size</button>
+            <button onclick="toggleLightMode()">Toggle Light/Dark Mode</button>
+            <button onclick="toggleColorBlindMode()">Toggle Color-Blind Mode</button>
+        </nav>
+    </body>
 
-    <!-- Mode Controls -->
-    <div id="mode-controls">
-        <button onclick="toggleLightMode()">Toggle Light/Dark Mode</button>
-        <button onclick="toggleColorBlindMode()">Toggle Color-Blind Mode</button>
-    </div>
+    <nav id="navbar">
+        <a href="index.html" class="navOptions"> Home </a>
+        <a href="forest.html" class="navOptions"> Forest </a>
+        <a href="arctic.html" class="navOptions"> Arctic  </a>
+        <a href="desert.html" class="navOptions"> Desert  </a>
+    </nav>    
+    
 
     <!-- Main Title -->
     <h3 class="text1">World Biomes</h3>
 
-    <!-- Desert Section -->
-    <div class="container">
-        <div class="left"></div>
-        <div class="right">
-            <div class="content">
-                <h1>The Desert</h1>
-                <p>
-                    The desert biome, covering about one-fifth of Earth’s surface, 
-                    is defined by its extremely dry conditions, with an annual rainfall 
-                    of no more than 50 centimeters (20 inches). The landscape of deserts 
-                    can vary significantly, with soil that may be sandy, gravelly, or 
-                    stony, depending on the type of desert. There are four main types of 
-                    deserts: hot and dry, semi-arid, coastal, and cold. Hot and dry deserts, 
-                    like the Sahara and Mojave, experience high temperatures year-round, while 
-                    semi-arid deserts, found in places like North America and Asia, have cooler
-                    winters with occasional rainfall. Coastal deserts, such as the Atacama Desert 
-                    in Chile, are more humid but still receive little rain. Cold deserts, like 
-                    Antarctica, are dry but have frigid temperatures.
-                </p>
-                <p>
-                    The harsh desert environment is home to a variety of animals that have adapted 
-                    to survive extreme conditions. Invertebrates such as scorpions, tarantulas, and 
-                    desert beetles are common, while mammals like the fennec fox and kangaroo rat 
-                    have developed strategies to conserve water and stay cool. Birds such as the 
-                    roadrunner and burrowing owl are adept at finding food and shelter in the arid 
-                    landscape. Reptiles, including the Gila monster and horned lizard, thrive in the 
-                    heat by regulating their body temperature and seeking shade when needed. Amphibians 
-                    like the desert rain frog and spadefoot toad emerge only when conditions are moist, 
-                    and fish such as the desert pupfish inhabit isolated water sources. These adaptations 
-                    enable a wide variety of species to survive and even flourish in one of Earth’s most 
-                    challenging biomes.
-                </p>
-                
-            </div>
-        </div>
-    </div>
 
-    <!-- Arctic Section -->
-    <section>
-        <div class="container2">
-            <div class="left2"></div>
-            <div class="right2">
-                <div class="content2">
-                    <h1>The Arctic</h1>
-                    <p>
-                        The Arctic biome is one of the most unique and extreme ecosystems on Earth, characterized 
-                        by its frigid temperatures, icy landscapes, and specialized wildlife. Located at the 
-                        northernmost regions of the planet, the Arctic biome encompasses the Arctic Ocean and parts 
-                        of Alaska, Canada, Russia, Greenland, and Scandinavia. This biome is defined by its cold 
-                        climate, with long winters and short, cool summers. The temperature can drop as low as 
-                        -40°F (-40°C) in winter and reach just above freezing during summer months. Despite these 
-                        harsh conditions, the Arctic is home to a remarkable variety of life forms that have adapted 
-                        to survive in such an unforgiving environment.
-                    </p>
-                    <p>
-                        The primary characteristic of the Arctic biome is its lack of vegetation. The growing 
-                        season is brief, and the soil is often frozen, known as permafrost, which makes it difficult 
-                        for many plants to thrive. However, hardy species like mosses, lichens, and low-growing shrubs 
-                        can survive in the short summer period, when the ground briefly thaws. The sparse plant life supports 
-                        a variety of herbivores, such as Arctic hares, caribou, and lemmings, which in turn provide food for 
-                        carnivores like Arctic foxes, wolves, and polar bears.
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Forest Section -->
     <section>
         <div class="container3">
             <div class="right3"></div>
             <div class="left3">
                 <div class="content3">
-                    <h1>The Forest</h1>
+                    <h1>Introduction</h1>
                     <p>
-                        The forest biome is one of Earth's most important ecosystems, covering approximately 30% of the planet's 
-                        surface. It plays a critical role in maintaining global biodiversity, regulating climate, and supporting 
-                        the water cycle. Forests are classified into three main types: tropical, temperate, and boreal, each with 
-                        its own distinct characteristics, flora, and fauna.
+                        This page is an experiment to explore simple steps web developers can 
+                        take to make their projects easier to see and more user-friendly. Not 
+                        every user is familiar with existing tools for visual aid or the 
+                        various hidden keystrokes pre-installed on their operating system. 
+                        This page is simply an exercise in implementing basic button-placement 
+                        tools for the visually impaired and/or those who are less familiar with 
+                        computers. These methods do not need to be implemented everywhere, but 
+                        they could be especially useful for text-heavy web pages.
                     </p>
                     
                 </div>
             </div>
         </div>
     </section>
+</body>
+
+    
 </body>
 </html>
