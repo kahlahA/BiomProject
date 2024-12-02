@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url("../Image/EarthFromSpace.jpg");
+    background-image: url("../images/EarthFromSpace.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +10,73 @@ body {
     font-family: monospace;
 }
 
+
+
+/* Vertical Navigation Bar Styles */
+#navbar {
+    position: fixed; 
+    top: 20%; 
+    left: 0; 
+    transform: translateY(-50%); 
+    width: 200px; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    border-radius: 0 10px 10px 0; 
+    z-index: 1000; 
+    font-weight: bold;
+}
+
+/* Navigation Links */
+#navbar .navOptions {
+    display: block; 
+    color: rgb(0, 0, 0); /* Set text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust font size */
+    margin: 10px 0; /* Add spacing between links */
+    padding: 10px; /* Add padding for clickable area */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: #abb6db; /* Default background color for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effects for Links */
+#navbar .navOptions:hover {
+    background-color: #575f85; /* Darker background on hover */
+    color: white; /* Ensure contrast */
+}
+
+
+/* Navigation Bar Container */
+#horizontal-nav {
+    position: fixed;
+    top: 10px; /* Distance from the top of the page */
+    left: 27%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to center align */
+    display: flex; /* Align buttons in a straight line */
+    gap: 10px; /* Add spacing between buttons */
+    z-index: 1000; /* Ensure it stays above other elements */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional background for visibility */
+    padding: 10px 20px; /* Optional padding for aesthetics */
+    border-radius: 8px; /* Rounded corners for the container */
+}
+
+/* Button Styles */
+#horizontal-nav button {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #abb6db;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#horizontal-nav button:hover {
+    background-color: #575f85;
+    color: white;
+}
 
 
 #text-controls {
@@ -91,8 +158,8 @@ section {
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 20%;
-    left: 2%;
+    top: 15%;
+    left: 15%;
     color: rgba(79, 88, 133, 0.918);
     text-align: center;
 }
@@ -109,6 +176,28 @@ section {
     padding: 20px; 
     box-sizing: border-box; 
 }
+
+/* Apply a background image to .right, .right2, and .right3 
+.right {
+    background-image: url("../images/desert.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: rgb(191, 218, 218); 
+    padding: 20px; 
+    border-radius: 8px; 
+    overflow: auto; 
+}
+*/
+
+/* Optional: Adjust background images when in color-blind mode 
+body.color-blind-mode .right {
+    background-image: url("../images/desertCB.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+*/
 
 .left, .left2, .right3 {
     width: 45%; 
