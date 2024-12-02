@@ -9,7 +9,6 @@ function increaseFontSize() {
     }
 }
 
-
 // Function to decrease font size
 function decreaseFontSize() {
     if (fontSize > 12) { // Prevent font size from becoming too small
@@ -76,6 +75,12 @@ function toggleColorBlindMode() {
             btn.style.backgroundColor = '#007bff'; // Blue buttons, distinguishable for most types of color blindness
             btn.style.color = '#fff';  // White text for clarity
         });
+
+        // Modify navigation links for better visibility
+        document.querySelectorAll('#navbar .navOptions').forEach((nav) => {
+            nav.style.backgroundColor = '#f7f7f7'; // Light background for contrast
+            nav.style.color = '#222'; // Darker text color
+        });
     } else {
         document.body.style.backgroundColor = ""; // Reset to default
         document.body.style.color = ""; // Reset to default
@@ -91,9 +96,14 @@ function toggleColorBlindMode() {
             btn.style.backgroundColor = ""; // Reset button background
             btn.style.color = ""; // Reset button text color
         });
+
+        // Reset navigation link styles
+        document.querySelectorAll('#navbar .navOptions').forEach((nav) => {
+            nav.style.backgroundColor = ""; // Reset navigation background
+            nav.style.color = ""; // Reset navigation text color
+        });
     }
 }
-
 
 // Apply default font size on page load
 document.addEventListener("DOMContentLoaded", updateFontSize);
