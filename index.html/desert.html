@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Biomes</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="../images/desert.jpg" alt="Desert Image" class="front-image">
+    </div>
+
+    <style>
+
+        .image-container {
+            position: relative; /* Container relative positioning */
+            width: 100%; /* Adjust based on your needs */
+            height: auto; /* Adjust based on your needs */
+            position: fixed;
+        }
+
+        .front-image {
+            position: absolute; /* Position the image within its container */
+            z-index: 10; /* Higher number brings it to the front */
+            top: 400px; /* Adjust positioning */
+            left: 50px; /* Adjust positioning */
+            width: 700px; /* Example size */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+
+    </style>
+
+
+    <body>
+        <nav id="horizontal-nav">
+            <button onclick="increaseFontSize()">Increase Text Size</button>
+            <button onclick="decreaseFontSize()">Decrease Text Size</button>
+            <button onclick="resetFontSize()">Reset Text Size</button>
+            <button onclick="toggleLightMode()">Toggle Light/Dark Mode</button>
+            <button onclick="toggleColorBlindMode()">Toggle Color-Blind Mode</button>
+        </nav>
+    </body>
+    
+    <nav id="navbar">
+        <a href="index.html" class="navOptions"> Home </a>
+        <a href="forest.html" class="navOptions"> Forest </a>
+        <a href="arctic.html" class="navOptions"> Arctic  </a>
+        <a href="desert.html" class="navOptions"> Desert  </a>
+    </nav>    
+
+    <!-- Main Title -->
+    <h3 class="text1">World Biomes</h3>
+
+    
+     <!-- Desert Section -->
+     <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <div class="content">
+                <h1>The Desert</h1>
+                <p>
+                    The desert biome, covering about one-fifth of Earth’s surface, 
+                    is defined by its extremely dry conditions, with an annual rainfall 
+                    of no more than 50 centimeters (20 inches). The landscape of deserts 
+                    can vary significantly, with soil that may be sandy, gravelly, or 
+                    stony, depending on the type of desert. There are four main types of 
+                    deserts: hot and dry, semi-arid, coastal, and cold. Hot and dry deserts, 
+                    like the Sahara and Mojave, experience high temperatures year-round, while 
+                    semi-arid deserts, found in places like North America and Asia, have cooler
+                    winters with occasional rainfall. Coastal deserts, such as the Atacama Desert 
+                    in Chile, are more humid but still receive little rain. Cold deserts, like 
+                    Antarctica, are dry but have frigid temperatures.
+                </p>
+                <p>
+                    The harsh desert environment is home to a variety of animals that have adapted 
+                    to survive extreme conditions. Invertebrates such as scorpions, tarantulas, and 
+                    desert beetles are common, while mammals like the fennec fox and kangaroo rat 
+                    have developed strategies to conserve water and stay cool. Birds such as the 
+                    roadrunner and burrowing owl are adept at finding food and shelter in the arid 
+                    landscape. Reptiles, including the Gila monster and horned lizard, thrive in the 
+                    heat by regulating their body temperature and seeking shade when needed. Amphibians 
+                    like the desert rain frog and spadefoot toad emerge only when conditions are moist, 
+                    and fish such as the desert pupfish inhabit isolated water sources. These adaptations 
+                    enable a wide variety of species to survive and even flourish in one of Earth’s most 
+                    challenging biomes.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Biomes</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="../images/Forest_Fog_1600x.webp" alt="Forest Image" class="front-image">
+    </div>
+
+    <style>
+
+        .image-container {
+            position: relative; /* Container relative positioning */
+            width: 100%; /* Adjust based on your needs */
+            height: auto; /* Adjust based on your needs */
+            position: fixed;
+        }
+
+        .front-image {
+            position: absolute; /* Position the image within its container */
+            z-index: 10; /* Higher number brings it to the front */
+            top: 400px; /* Adjust positioning */
+            left: 50px; /* Adjust positioning */
+            width: 700px; /* Example size */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+
+    </style>
+
+    <body>
+        <nav id="horizontal-nav">
+            <button onclick="increaseFontSize()">Increase Text Size</button>
+            <button onclick="decreaseFontSize()">Decrease Text Size</button>
+            <button onclick="resetFontSize()">Reset Text Size</button>
+            <button onclick="toggleLightMode()">Toggle Light/Dark Mode</button>
+            <button onclick="toggleColorBlindMode()">Toggle Color-Blind Mode</button>
+        </nav>
+    </body>
+    
+    <nav id="navbar">
+        <a href="index.html" class="navOptions"> Home </a>
+        <a href="forest.html" class="navOptions"> Forest </a>
+        <a href="arctic.html" class="navOptions"> Arctic  </a>
+        <a href="desert.html" class="navOptions"> Desert  </a>
+    </nav>       
+
+    <!-- Main Title -->
+    <h3 class="text1">World Biomes</h3>
+
+    
+    <!-- Forest Section -->
+    <section>
+        <div class="container3">
+            <div class="right3"></div>
+            <div class="left3">
+                <div class="content3">
+                    <h1>The Forest</h1>
+                    <p>
+                        The forest biome is one of Earth's most important ecosystems, covering approximately 30% of the planet's 
+                        surface. It plays a critical role in maintaining global biodiversity, regulating climate, and supporting 
+                        the water cycle. Forests are classified into three main types: tropical, temperate, and boreal, each with 
+                        its own distinct characteristics, flora, and fauna.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
