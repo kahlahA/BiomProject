@@ -3,7 +3,7 @@ let fontSize = 20;
 
 // Function to increase font size
 function increaseFontSize() {
-    if (fontSize < 40) { // Prevent font size from exceeding 40px
+    if (fontSize < 40) { 
         fontSize += 2;
         updateFontSize();
     }
@@ -11,7 +11,7 @@ function increaseFontSize() {
 
 // Function to decrease font size
 function decreaseFontSize() {
-    if (fontSize > 12) { // Prevent font size from becoming too small
+    if (fontSize > 12) { 
         fontSize -= 2; 
         updateFontSize();
     }
@@ -19,7 +19,7 @@ function decreaseFontSize() {
 
 // Function to reset font size to default
 function resetFontSize() {
-    fontSize = 20; // Reset to default
+    fontSize = 20; 
     updateFontSize();
 }
 
@@ -44,13 +44,13 @@ function toggleLightMode() {
     // Apply light mode style to `.right` elements
     if (document.body.classList.contains("light-mode")) {
         document.querySelectorAll(".right, .right2, .left3").forEach(el => {
-            el.style.backgroundColor = "white"; // Set background to white
-            el.style.color = "black"; // Set text color to black
+            el.style.backgroundColor = "white";
+            el.style.color = "black"; 
         });
     } else {
         document.querySelectorAll(".right, .right2, .left3").forEach(el => {
-            el.style.backgroundColor = "#494949"; // Default dark mode background for .right
-            el.style.color = "white"; // Default dark mode text color for .right
+            el.style.backgroundColor = "#494949"; 
+            el.style.color = "white";
         });
     }
 }
@@ -61,46 +61,46 @@ function toggleColorBlindMode() {
 
     // Adjust styles for color-blind users
     if (document.body.classList.contains("color-blind-mode")) {
-        document.body.style.backgroundColor = "#f4f4f4";  // Lighter background for better contrast
-        document.body.style.color = "#333";  // Darker text for better visibility
+        document.body.style.backgroundColor = "#f4f4f4";  
+        document.body.style.color = "#333";  
         
         // Update elements' colors to avoid reliance on just red/green
         document.querySelectorAll('.right, .right2, .left3').forEach((el) => {
-            el.style.color = '#222';  // Darker, high contrast color for text
-            el.style.backgroundColor = '#f7f7f7';  // Light background for better contrast
+            el.style.color = '#222';  
+            el.style.backgroundColor = '#f7f7f7';  
         });
 
         // Modify buttons for better visibility
         document.querySelectorAll('button').forEach((btn) => {
-            btn.style.backgroundColor = '#007bff'; // Blue buttons, distinguishable for most types of color blindness
-            btn.style.color = '#fff';  // White text for clarity
+            btn.style.backgroundColor = '#007bff'; 
+            btn.style.color = '#fff';  
         });
 
         // Modify navigation links for better visibility
         document.querySelectorAll('#navbar .navOptions').forEach((nav) => {
-            nav.style.backgroundColor = '#f7f7f7'; // Light background for contrast
-            nav.style.color = '#222'; // Darker text color
+            nav.style.backgroundColor = '#f7f7f7'; 
+            nav.style.color = '#222'; 
         });
     } else {
-        document.body.style.backgroundColor = ""; // Reset to default
-        document.body.style.color = ""; // Reset to default
+        document.body.style.backgroundColor = ""; 
+        document.body.style.color = ""; 
 
         // Reset elements' colors
         document.querySelectorAll('.right, .right2, .left3').forEach((el) => {
-            el.style.color = "";  // Reset text color
-            el.style.backgroundColor = "";  // Reset background color
+            el.style.color = "";  
+            el.style.backgroundColor = "";  
         });
 
         // Reset button styles
         document.querySelectorAll('button').forEach((btn) => {
-            btn.style.backgroundColor = ""; // Reset button background
-            btn.style.color = ""; // Reset button text color
+            btn.style.backgroundColor = ""; 
+            btn.style.color = ""; 
         });
 
         // Reset navigation link styles
         document.querySelectorAll('#navbar .navOptions').forEach((nav) => {
-            nav.style.backgroundColor = ""; // Reset navigation background
-            nav.style.color = ""; // Reset navigation text color
+            nav.style.backgroundColor = ""; 
+            nav.style.color = ""; 
         });
     }
 }
